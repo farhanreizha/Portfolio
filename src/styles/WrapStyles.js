@@ -11,7 +11,7 @@ flex flex-col gap-y-8
 `
 
 export const WrapCards = tw.div`
-flex flex-col flex-wrap gap-y-5
+flex flex-col flex-wrap gap-y-5 justify-center
 md:flex-row
 `
 
