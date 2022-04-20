@@ -26,3 +26,9 @@ export const Button = styled.button(({ variant, outline }) => [
     `,
   ],
 ])
+
+// export const Button = css(({variant, outline})=>[
+// ${tw`
+// border
+// `}
+// ])

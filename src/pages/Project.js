@@ -6,6 +6,7 @@ import { CardsProject } from '../styles/CardsStyles'
 import { Button, ButtonLayout } from '../styles/ButtonStyles'
 import { Ecommerce, Tournyaka } from '../assets'
 import { ImagesProject } from '../styles/ImagesStyles'
+import { Link } from 'react-router-dom'
 
 const Project = () => {
   const Item = [
@@ -13,12 +14,16 @@ const Project = () => {
       image: Tournyaka,
       title: 'Tournyaka',
       desc: 'Tournyaka is a website for tour guide in pangandaran, this web still develop',
+      status: 'Masih Progress belum bisa di view :V',
+      view: '',
+      repo: 'https://github.com/farhanreizha/tournyaka',
       color: 'secondary',
     },
     {
       image: Ecommerce,
       title: 'Ecommerce',
       desc: 'Ecommerce any brand and store to shoping online, this web still develop',
+      status: 'Masih Progress belum bisa di view :V',
       color: 'secondary',
     },
   ]
@@ -37,13 +42,22 @@ const Project = () => {
                     <Paragraph>{item.desc}</Paragraph>
                   </div>
                   <div>
+                    <Paragraph>
+                      <b>Status:</b> {item.status}
+                    </Paragraph>
+                  </div>
+                  <div>
                     <ButtonLayout>
-                      <Button variant='bgsecondary' outline={false}>
-                        View Live
-                      </Button>
-                      <Button variant='secondary' outline={true}>
-                        Github Repo
-                      </Button>
+                      <a href={item.view}>
+                        <Button variant='bgsecondary' outline={false}>
+                          View Live
+                        </Button>
+                      </a>
+                      <a href={item.repo}>
+                        <Button variant='secondary' outline={true}>
+                          Github Repo
+                        </Button>
+                      </a>
                     </ButtonLayout>
                   </div>
                 </CardsProject>
