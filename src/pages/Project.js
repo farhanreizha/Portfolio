@@ -6,7 +6,6 @@ import { CardsProject } from '../styles/CardsStyles'
 import { Button, ButtonLayout } from '../styles/ButtonStyles'
 import { Ecommerce, Tournyaka } from '../assets'
 import { ImagesProject } from '../styles/ImagesStyles'
-import { Link } from 'react-router-dom'
 
 const Project = () => {
   const Item = [
