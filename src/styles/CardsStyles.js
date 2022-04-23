@@ -3,12 +3,12 @@ import tw, { styled } from 'twin.macro'
 export const CardsContent = styled.div(({ color }) => [
   tw`rounded-lg
   `,
-  color === 'primary' && tw`bg-[#003545]`,
-  color === 'secondary' && tw`bg-[#3C6562]`,
+  color === 'primary' && tw`bg-[#4297A0]`,
+  color === 'secondary' && tw`bg-[#E57F84]`,
 ])
 
 export const CardsStyles = tw.div`
-flex flex-col mx-8 gap-y-5 pt-36 pb-10
+flex flex-col mx-4 gap-y-5 pt-36 pb-10
 [> div]:(flex flex-col gap-y-7)
 `
 

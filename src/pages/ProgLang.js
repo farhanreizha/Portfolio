@@ -8,13 +8,13 @@ import {
   SiPython,
   SiReact,
 } from 'react-icons/si'
-import { Cards, Container } from '../components'
+import { Cards } from '../components'
 import { CardsSkill } from '../styles/CardsStyles'
 import { IconStyle } from '../styles/IconsStyle'
 import { HeadingSix, HeadingThree } from '../styles/TextStyles'
-import { Wrap, WrapCards, WrapSkill } from '../styles/WrapStyles'
+import { WrapCards, WrapSkill } from '../styles/WrapStyles'
 
-const SKill = () => {
+const ProgLang = () => {
   const Items = [
     { icon: <FaHtml5 />, title: 'HTML', subtitle: 'Intermediate', color: 'primary' },
     { icon: <FaCss3Alt />, title: 'CSS', subtitle: 'Intermediate', color: 'secondary' },
@@ -26,27 +26,22 @@ const SKill = () => {
     { icon: <SiPython />, title: 'Python', subtitle: 'Beginner', color: 'secondary' },
   ]
   return (
-    <Wrap>
-      <Container>
-        <WrapSkill>
-          <HeadingThree>Coding Skill I have:</HeadingThree>
-          <WrapCards>
-            {Items.map((item, idx) => (
-              <Cards key={idx} color={item.color}>
-                <CardsSkill>
-                  <IconStyle>{item.icon}</IconStyle>
-                  <wrap>
-                    <HeadingThree>{item.title}</HeadingThree>
-                    <HeadingSix>{item.subtitle}</HeadingSix>
-                  </wrap>
-                </CardsSkill>
-              </Cards>
-            ))}
-          </WrapCards>
-        </WrapSkill>
-      </Container>
-    </Wrap>
+    <WrapSkill>
+      <WrapCards>
+        {Items.map((item, idx) => (
+          <Cards key={idx} color={item.color}>
+            <CardsSkill>
+              <IconStyle>{item.icon}</IconStyle>
+              <wrap>
+                <HeadingThree>{item.title}</HeadingThree>
+                <HeadingSix>{item.subtitle}</HeadingSix>
+              </wrap>
+            </CardsSkill>
+          </Cards>
+        ))}
+      </WrapCards>
+    </WrapSkill>
   )
 }
 
-export default SKill
+export default ProgLang

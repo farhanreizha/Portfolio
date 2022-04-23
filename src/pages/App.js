@@ -1,16 +1,14 @@
 import { Footer, Hero, Navigation } from '../components'
-import About from './About'
+import Skill from './Skill'
 import Contact from './Contact'
 import Project from './Project'
-import SKill from './SKill'
 
 const App = () => {
   return (
     <>
       <Navigation />
       <Hero />
-      <About />
-      <SKill />
+      <Skill />
       <Project />
       <Contact />
       <Footer />

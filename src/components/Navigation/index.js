@@ -1,12 +1,13 @@
 import React from 'react'
 import { Nav, NavGroup, NavLink } from '../../styles/NavStyles'
+import { HeadingFour } from '../../styles/TextStyles'
 import { Wrap } from '../../styles/WrapStyles'
 import Container from '../Container'
 
 const Navigation = () => {
   const Items = [
     { title: 'Home', href: '/' },
-    { title: 'About', href: '#about' },
+    { title: 'Skill', href: '#skill' },
     { title: 'Project', href: '#project' },
     { title: 'Contact', href: '#contact' },
   ]
@@ -18,7 +19,9 @@ const Navigation = () => {
           <NavGroup>
             {Items.map((item, idx) => (
               <NavLink key={idx}>
-                <a href={item.href}>{item.title}</a>
+                <HeadingFour>
+                  <a href={item.href}>{item.title}</a>
+                </HeadingFour>
               </NavLink>
             ))}
           </NavGroup>

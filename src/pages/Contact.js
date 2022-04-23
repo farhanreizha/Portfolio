@@ -22,7 +22,7 @@ const Contact = () => {
           <Input type='text' placeholder='Email :' />
           <InputMessage type='text' placeholder='Message :' />
           <div>
-            <Button variant='bgsecondary' outline={false}>
+            <Button variant='primary' outline={false}>
               Send
             </Button>
           </div>

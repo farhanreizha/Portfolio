@@ -1,7 +1,7 @@
 import React from 'react'
 import { Cards, Container } from '../components'
 import { Wrap, WrapCards, WrapProject } from '../styles/WrapStyles'
-import { HeadingFive, HeadingTwo, Paragraph } from '../styles/TextStyles'
+import { HeadingFive, HeadingThree, Paragraph } from '../styles/TextStyles'
 import { CardsProject } from '../styles/CardsStyles'
 import { Button, ButtonLayout } from '../styles/ButtonStyles'
 import { Ecommerce, Tournyaka } from '../assets'
@@ -16,7 +16,7 @@ const Project = () => {
       status: 'Masih Progress belum bisa di view :V',
       view: '',
       repo: 'https://github.com/farhanreizha/tournyaka',
-      color: 'secondary',
+      color: 'primary',
     },
     {
       image: Ecommerce,
@@ -30,7 +30,7 @@ const Project = () => {
     <Wrap id='project'>
       <Container>
         <WrapProject>
-          <HeadingTwo>The project I created:</HeadingTwo>
+          <HeadingThree>The project I created:</HeadingThree>
           <WrapCards>
             {Item.map((item, idx) => (
               <Cards key={idx} color={item.color}>
