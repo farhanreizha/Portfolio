@@ -20,7 +20,7 @@ const Skill = () => {
         <WrapAbout>
           <HeadingThree>Coding Skill I have:</HeadingThree>
           <div>
-            <HeadingOne>1+</HeadingOne>
+            <HeadingOne color={true}>1+</HeadingOne>
             <HeadingFive>
               Year of experience. Specialised in web developher, while ensuring a seamless web
               experiance for end users.

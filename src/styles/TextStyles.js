@@ -1,8 +1,11 @@
 import tw, { styled } from 'twin.macro'
 
-export const HeadingOne = tw.h1`
-flex text-4xl md:text-6xl gap-x-4 lg:gap-x-10 font-bold text-[#E57F84]
-`
+export const HeadingOne = styled.h1(({ color }) => [
+  tw`
+flex text-4xl md:text-6xl gap-x-4 lg:gap-x-10 font-bold text-[#F4EAE6]
+`,
+  color === true && tw`text-[#E57F84]`,
+])
 
 export const HeadingTwo = styled.h2(({ color }) => [
   tw`text-2xl lg:text-3xl flex flex-col gap-y-2 font-semibold
