@@ -1,4 +1,5 @@
 import React from 'react'
+import tw from 'twin.macro'
 import { Nav, NavGroup, NavLink } from '../../styles/NavStyles'
 import { HeadingFour } from '../../styles/TextStyles'
 import { Wrap } from '../../styles/WrapStyles'
@@ -18,11 +19,11 @@ const Navigation = () => {
         <Container>
           <NavGroup>
             {Items.map((item, idx) => (
-              <NavLink key={idx}>
-                <HeadingFour>
+              <HeadingFour key={idx}>
+                <NavLink>
                   <a href={item.href}>{item.title}</a>
-                </HeadingFour>
-              </NavLink>
+                </NavLink>
+              </HeadingFour>
             ))}
           </NavGroup>
         </Container>

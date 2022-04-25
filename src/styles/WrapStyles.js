@@ -1,9 +1,9 @@
 import tw from 'twin.macro'
 
 export const Wrap = tw.div`
-w-full mt-8 
-md:mt-12
-lg:mt-20 lg:mb-5
+w-full mt-20
+md:mt-24
+lg:mt-32 lg:mb-5
 `
 export const WrapAbout = tw.div`
 flex flex-col gap-y-8 justify-center w-full
